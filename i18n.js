@@ -23,10 +23,10 @@ const I18N = {
 
     "now.title": "Ahora mismo",
     "now.lead": "Esto es lo que tengo entre manos estos días:",
-    "now.item1": "Liderando la migración de decenas de microservicios a una nueva infraestructura de despliegue en Kubernetes/Helm.",
-    "now.item2": "Aplicando hardening de seguridad (CSP, HSTS, gestión de CVEs) en frontales de producción.",
-    "now.item3": "Integrando validación antivirus y de tipo de fichero en subidas de documentos.",
-    "now.item4": "Usando Claude Code a diario, creando mis propias skills, agentes y plugins para automatizar desarrollo.",
+    "now.item1": "Modernizando infraestructura: migrando decenas de servicios a una nube basada en Docker y Kubernetes.",
+    "now.item2": "Aplicando ciberseguridad en cada capa de lo que construyo, para proteger datos y usuarios reales.",
+    "now.item3": "Llevando la IA generativa a mi día a día de desarrollo, con Claude Code como copiloto para programar más rápido y mejor.",
+    "now.item4": "Construyendo backend sólido con Java y Spring, sin perder de vista Python para proyectos de inteligencia artificial.",
 
     "exp.title": "Experiencia",
     "exp.role1": "Ingeniero de Software",
@@ -95,10 +95,10 @@ const I18N = {
 
     "now.title": "Right now",
     "now.lead": "Here's what I'm working on these days:",
-    "now.item1": "Leading the migration of dozens of microservices to a new Kubernetes/Helm deployment infrastructure.",
-    "now.item2": "Rolling out security hardening (CSP, HSTS, CVE management) across production front-ends.",
-    "now.item3": "Integrating antivirus and file-type validation into document uploads.",
-    "now.item4": "Using Claude Code daily, building my own skills, agents and plugins to automate development.",
+    "now.item1": "Modernizing infrastructure: migrating dozens of services to a Docker and Kubernetes powered cloud.",
+    "now.item2": "Applying cybersecurity at every layer of what I build, to protect real data and real users.",
+    "now.item3": "Bringing generative AI into my daily development flow, with Claude Code as a copilot to code faster and better.",
+    "now.item4": "Building solid backend systems with Java and Spring, while keeping an eye on Python for AI projects.",
 
     "exp.title": "Experience",
     "exp.role1": "Software Engineer",
