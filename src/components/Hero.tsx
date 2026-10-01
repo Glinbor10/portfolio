@@ -1,4 +1,7 @@
 import { Box, Button, Chip, Stack, Typography } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 import { motion } from "framer-motion";
 import type { Lang } from "../content";
 import { hero, links } from "../content";
@@ -23,13 +26,13 @@ export default function Hero({ lang }: { lang: Lang }) {
           </Typography>
 
           <Stack direction="row" spacing={1.5} useFlexGap sx={{ mt: 4, mb: 3, flexWrap: "wrap" }}>
-            <Button href={links.linkedin} target="_blank" rel="noopener" variant="contained" size="large">
-              LinkedIn ↗
+            <Button href={links.linkedin} target="_blank" rel="noopener" variant="contained" size="large" startIcon={<LinkedInIcon />}>
+              LinkedIn
             </Button>
-            <Button href={links.github} target="_blank" rel="noopener" variant="outlined" size="large">
-              GitHub ↗
+            <Button href={links.github} target="_blank" rel="noopener" variant="outlined" size="large" startIcon={<GitHubIcon />}>
+              GitHub
             </Button>
-            <Button href={links.email} variant="outlined" size="large">
+            <Button href={links.email} variant="outlined" size="large" startIcon={<EmailIcon />}>
               Email
             </Button>
           </Stack>
