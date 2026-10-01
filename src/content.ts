@@ -135,6 +135,10 @@ export const experience = {
           es: "Lideré la migración de decenas de servicios de infraestructura legacy a una nueva plataforma Docker/Kubernetes/Helm.",
           en: "Led the migration of dozens of legacy infrastructure services to a new Docker/Kubernetes/Helm platform.",
         },
+        {
+          es: "Asumí responsabilidades transversales de sistemas y DevOps más allá de mi proyecto asignado, trabajando indistintamente en servicios nuevos y heredados según lo necesitara el equipo.",
+          en: "Took on cross-cutting systems and DevOps responsibilities beyond my assigned project, working on both new and legacy services as the team needed.",
+        },
       ],
     },
     {
