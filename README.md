@@ -1,15 +1,21 @@
 # Guillermo Linares Borrego · Portfolio
 
-Personal portfolio site. Static HTML/CSS/JS, no build step, bilingual (ES/EN).
+Personal portfolio site. React + TypeScript + Vite, MUI for components and Framer Motion for scroll animations. Bilingual (ES/EN), light/dark theme.
 
 ## Develop
 
-Just open `index.html` in a browser, or serve statically:
+```
+npm install
+npm run dev
+```
+
+## Build
 
 ```
-npx serve .
+npm run build
+npm run preview
 ```
 
 ## Deploy
 
-Deployed on Vercel from this repo (framework preset: "Other", no build command needed).
+Deployed on Vercel (framework preset: Vite, build command `npm run build`, output directory `dist`).
