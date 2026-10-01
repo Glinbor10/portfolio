@@ -7,7 +7,7 @@ import Section from "./Section";
 export default function BeyondSection({ lang }: { lang: Lang }) {
   return (
     <Section id="beyond" idx="06" title={t(beyond.title, lang)}>
-      <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 3, mb: 3 }}>
+      <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr", md: "1fr 1fr 1fr" }, gap: 3, mb: 3 }}>
         {beyond.cards.map((card) => (
           <Paper key={t(card.title, lang)} variant="outlined" sx={{ p: 3, borderRadius: 3 }}>
             <Typography sx={{ fontSize: "1.8rem", mb: 1 }}>{card.emoji}</Typography>

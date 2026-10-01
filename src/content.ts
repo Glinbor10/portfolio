@@ -283,10 +283,18 @@ export const beyond = {
         en: "I worked at a catering company up to head waiter, leading teams and making decisions under pressure, before fully committing to software engineering.",
       },
     },
+    {
+      emoji: "🎺",
+      title: { es: "Música", en: "Music" },
+      text: {
+        es: "Toqué la trompeta durante 8 años en una agrupación musical, donde en solo un año pasé de trompeta tercera a trompeta primera.",
+        en: "I played trumpet for 8 years in a music ensemble, moving from third to first chair in just one year.",
+      },
+    },
   ] satisfies BeyondCard[],
   note: {
-    es: "Dos etapas que me enseñaron a ganarme la confianza de un equipo rápido: el mismo patrón que se repite en mi paso de becario a ingeniero.",
-    en: "Two chapters that taught me how to earn a team's trust fast: the same pattern behind my jump from intern to engineer.",
+    es: "Tres etapas que me enseñaron a ganarme la confianza de un equipo rápido: el mismo patrón que se repite en mi paso de becario a ingeniero.",
+    en: "Three chapters that taught me how to earn a team's trust fast: the same pattern behind my jump from intern to engineer.",
   },
 };
 
