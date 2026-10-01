@@ -67,8 +67,8 @@ export const about = {
     en: "I'm a Software Engineer at Viafirma (Seville), focused on backend, applied security and cloud infrastructure.",
   },
   p2: {
-    es: "Empecé como becario de Ingeniería de Software en enero de 2026. Las prácticas estaban planificadas para 10 meses, pero en solo 4 pasé a formar parte del equipo como ingeniero a tiempo completo: adelanté 6 meses el final previsto gracias a la rapidez de adaptación al equipo.",
-    en: "I started as a Software Engineering intern in January 2026. The internship was planned for 10 months, but in just 4 I joined the team as a full-time engineer: 6 months ahead of schedule, thanks to how quickly I adapted to the team.",
+    es: "Empecé como becario de Ingeniería de Software en enero de 2026. Las prácticas estaban planificadas para 6 meses, pero en solo 4 pasé a formar parte del equipo como ingeniero a tiempo completo: adelanté 2 meses el final previsto gracias a la rapidez de adaptación al equipo.",
+    en: "I started as a Software Engineering intern in January 2026. The internship was planned for 6 months, but in just 4 I joined the team as a full-time engineer: 2 months ahead of schedule, thanks to how quickly I adapted to the team.",
   },
   stat1: { es: "meses de becario a ingeniero", en: "months from intern to engineer" },
   stat2: { es: "nota del TFG", en: "final project grade" },
