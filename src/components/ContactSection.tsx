@@ -16,6 +16,9 @@ export default function ContactSection({ lang }: { lang: Lang }) {
           <Button href={links.github} target="_blank" rel="noopener" variant="outlined" size="large">
             GitHub ↗
           </Button>
+          <Button href={links.email} variant="outlined" size="large">
+            {links.emailDisplay}
+          </Button>
         </Stack>
       </Box>
     </Section>

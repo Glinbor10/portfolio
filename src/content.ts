@@ -305,4 +305,6 @@ export const footer = {
 export const links = {
   linkedin: "https://www.linkedin.com/in/guillermo-linares-borrego",
   github: "https://github.com/Glinbor10",
+  email: "mailto:guillelinares11@gmail.com",
+  emailDisplay: "guillelinares11@gmail.com",
 };

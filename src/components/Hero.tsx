@@ -29,6 +29,9 @@ export default function Hero({ lang }: { lang: Lang }) {
             <Button href={links.github} target="_blank" rel="noopener" variant="outlined" size="large">
               GitHub ↗
             </Button>
+            <Button href={links.email} variant="outlined" size="large">
+              Email
+            </Button>
           </Stack>
 
           <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
