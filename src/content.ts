@@ -162,7 +162,20 @@ export const experience = {
       date: { es: "jul. 2024 – sept. 2024", en: "Jul 2024 – Sep 2024" },
       org: "Vitamina Tech · Sevilla",
       current: false,
-      bullets: [],
+      bullets: [
+        {
+          es: "Di mis primeros pasos profesionales en Python, aplicándolo tanto a desarrollo backend como a ciencia de datos.",
+          en: "Took my first professional steps in Python, applying it to both backend development and data science.",
+        },
+        {
+          es: "Entrené y evalué modelos de machine learning en Jupyter Notebook, iterando sobre datos reales.",
+          en: "Trained and evaluated machine learning models in Jupyter Notebook, iterating over real data.",
+        },
+        {
+          es: "Desarrollé APIs REST asíncronas con FastAPI integradas con React.js, incorporando funcionalidades de IA mediante orquestación de modelos de lenguaje con LangChain.",
+          en: "Built asynchronous REST APIs with FastAPI integrated with React.js, adding AI features through language model orchestration with LangChain.",
+        },
+      ],
     },
   ] satisfies ExperienceJob[],
 };
