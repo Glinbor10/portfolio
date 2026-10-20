@@ -5,8 +5,10 @@ export interface Bilingual {
   en: string;
 }
 
+export type NowIcon = "home" | "rocket" | "lock" | "brain" | "coffee";
+
 export interface NowItem {
-  emoji: string;
+  icon: NowIcon;
   text: Bilingual;
 }
 
@@ -26,6 +28,7 @@ export interface Project {
   action: Bilingual;
   result: Bilingual;
   link: string;
+  liveLink?: string;
   featured: boolean;
 }
 
@@ -34,8 +37,10 @@ export interface SkillGroup {
   tags: string[];
 }
 
+export type BeyondIcon = "handball" | "hospitality" | "music";
+
 export interface BeyondCard {
-  emoji: string;
+  icon: BeyondIcon;
   title: Bilingual;
   text: Bilingual;
 }
@@ -72,7 +77,7 @@ export const about = {
   },
   stat1: { es: "meses de becario a ingeniero", en: "months from intern to engineer" },
   stat2: { es: "nota del TFG", en: "final project grade" },
-  stat3: { es: "proyectos personales publicados", en: "personal projects published" },
+  stat3: { es: "proyectos propios publicados", en: "personal projects published" },
 };
 
 export const now = {
@@ -80,28 +85,35 @@ export const now = {
   lead: { es: "Esto es lo que tengo entre manos estos días:", en: "Here's what I'm working on these days:" },
   items: [
     {
-      emoji: "🚀",
+      icon: "home",
+      text: {
+        es: "Construyendo Housely en mi tiempo libre: una PWA que ya uso a diario en mi propio piso, de idea a producción.",
+        en: "Building Housely in my free time: a PWA I already use daily in my own flat, from idea to production.",
+      },
+    },
+    {
+      icon: "rocket",
       text: {
         es: "Modernizando infraestructura: migrando decenas de servicios a una nube basada en Docker y Kubernetes.",
         en: "Modernizing infrastructure: migrating dozens of services to a Docker and Kubernetes powered cloud.",
       },
     },
     {
-      emoji: "🔐",
+      icon: "lock",
       text: {
         es: "Aplicando ciberseguridad en cada capa de lo que construyo, para proteger datos y usuarios reales.",
         en: "Applying cybersecurity at every layer of what I build, to protect real data and real users.",
       },
     },
     {
-      emoji: "🧠",
+      icon: "brain",
       text: {
         es: "Llevando la IA generativa a mi día a día de desarrollo, con Claude Code como copiloto para programar más rápido y mejor.",
         en: "Bringing generative AI into my daily development flow, with Claude Code as a copilot to code faster and better.",
       },
     },
     {
-      emoji: "☕",
+      icon: "coffee",
       text: {
         es: "Construyendo backend sólido con Java y Spring, sin perder de vista Python para proyectos de inteligencia artificial.",
         en: "Building solid backend systems with Java and Spring, while keeping an eye on Python for AI projects.",
@@ -191,6 +203,26 @@ export const projects = {
     en: "Different stacks, same interest: building things that actually work.",
   },
   items: [
+    {
+      name: "Housely",
+      date: { es: "oct. 2026 – actualidad · en producción", en: "Oct 2026 – present · in production" },
+      tech: ["React", "TypeScript", "Firebase", "PWA", "Vitest", "Playwright"],
+      problem: {
+        es: "En un piso compartido, las tareas de limpieza se reparten a ojo y siempre acaban cayendo en las mismas personas.",
+        en: "In a shared flat, chores get split by eyeballing it and always end up falling on the same people.",
+      },
+      action: {
+        es: "Construí una PWA instalable y offline-first que rota las zonas de limpieza de forma justa entre todo el piso, con backend serverless en Firebase, tests end-to-end con Playwright y pipeline de CI/CD propio.",
+        en: "I built an installable, offline-first PWA that fairly rotates cleaning zones across the whole flat, with a serverless Firebase backend, Playwright end-to-end tests and its own CI/CD pipeline.",
+      },
+      result: {
+        es: "En uso real en mi propio piso desde el primer día, con despliegue continuo a producción.",
+        en: "In real use in my own flat from day one, with continuous deployment to production.",
+      },
+      link: "https://github.com/Glinbor10/housely",
+      liveLink: "https://housely-prod.web.app",
+      featured: true,
+    },
     {
       name: "SectorMindAI",
       date: { es: "nov. 2025 – jun. 2026 · TFG, nota 9,4", en: "Nov 2025 – Jun 2026 · Final project, grade 9.4" },
@@ -285,7 +317,7 @@ export const beyond = {
   title: nav.beyond,
   cards: [
     {
-      emoji: "🤾",
+      icon: "handball",
       title: { es: "Balonmano federado", en: "Competitive handball" },
       text: {
         es: "Jugué federado a buen nivel desde alevín (11 años) hasta los 18, disputando torneos nacionales: siete años de disciplina y trabajo en equipo.",
@@ -293,7 +325,7 @@ export const beyond = {
       },
     },
     {
-      emoji: "🍽️",
+      icon: "hospitality",
       title: { es: "Hostelería", en: "Hospitality" },
       text: {
         es: "Trabajé en un catering hasta llegar a maître, liderando equipos y tomando decisiones bajo presión, antes de dedicarme por completo a la ingeniería de software.",
@@ -301,7 +333,7 @@ export const beyond = {
       },
     },
     {
-      emoji: "🎺",
+      icon: "music",
       title: { es: "Música", en: "Music" },
       text: {
         es: "Toqué la trompeta durante 8 años en una agrupación musical, donde en solo un año pasé de trompeta tercera a trompeta primera.",
@@ -318,8 +350,8 @@ export const beyond = {
 export const contact = {
   title: { es: "Hablemos", en: "Let's talk" },
   lead: {
-    es: "¿Buscas a alguien para tu equipo? Estoy abierto a nuevas oportunidades.",
-    en: "Looking for someone for your team? I'm open to new opportunities.",
+    es: "Siempre abierto a nuevas conversaciones, retos interesantes y colaboraciones.",
+    en: "Always open to new conversations, interesting challenges and collaborations.",
   },
 };
 

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Box, CssBaseline, ThemeProvider } from "@mui/material";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import type { Lang } from "./content";
 import { createAppTheme } from "./theme";
 import Header from "./components/Header";
@@ -55,6 +57,8 @@ export default function App() {
         <ContactSection lang={lang} />
         <Footer lang={lang} />
       </Box>
+      <Analytics />
+      <SpeedInsights />
     </ThemeProvider>
   );
 }

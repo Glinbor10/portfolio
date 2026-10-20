@@ -15,8 +15,8 @@ export default function About({ lang }: { lang: Lang }) {
             <Typography sx={{ color: "text.secondary" }}>
               {lang === "es" ? (
                 <>
-                  Antes de eso me gradué en Ingeniería Informática – Ingeniería del Software por la Universidad de
-                  Sevilla, donde defendí mi Trabajo de Fin de Grado (
+                  Antes de eso me gradué en Ingeniería Informática – Ingeniería del Software por la Universidad de Sevilla, donde defendí mi
+                  Trabajo de Fin de Grado (
                   <Link href="https://github.com/Glinbor10/SectorMindAI" target="_blank" rel="noopener">
                     SectorMindAI
                   </Link>
@@ -28,8 +28,8 @@ export default function About({ lang }: { lang: Lang }) {
                 </>
               ) : (
                 <>
-                  Before that, I graduated in Computer Engineering – Software Engineering from the University of
-                  Seville, where I defended my final degree project (
+                  Before that, I graduated in Computer Engineering – Software Engineering from the University of Seville, where I defended
+                  my final degree project (
                   <Link href="https://github.com/Glinbor10/SectorMindAI" target="_blank" rel="noopener">
                     SectorMindAI
                   </Link>
@@ -48,9 +48,22 @@ export default function About({ lang }: { lang: Lang }) {
             {[
               { num: "4", label: t(about.stat1, lang) },
               { num: "9,4", label: t(about.stat2, lang) },
-              { num: "4", label: t(about.stat3, lang) },
+              { num: "5", label: t(about.stat3, lang) },
             ].map((stat) => (
-              <Paper key={stat.label} variant="outlined" sx={{ p: 2.5, borderRadius: 3 }}>
+              <Paper
+                key={stat.label}
+                variant="outlined"
+                sx={{
+                  p: 2.5,
+                  borderRadius: 3,
+                  transition: "transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease",
+                  "&:hover": {
+                    borderColor: "primary.main",
+                    transform: "translateY(-2px)",
+                    boxShadow: "0 8px 24px -12px var(--mui-palette-primary-main, rgba(15,157,120,0.4))",
+                  },
+                }}
+              >
                 <Typography variant="h4" sx={{ color: "primary.main" }}>
                   {stat.num}
                 </Typography>
