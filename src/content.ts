@@ -5,8 +5,10 @@ export interface Bilingual {
   en: string;
 }
 
+export type NowIcon = "home" | "rocket" | "lock" | "brain" | "coffee";
+
 export interface NowItem {
-  emoji: string;
+  icon: NowIcon;
   text: Bilingual;
 }
 
@@ -35,8 +37,10 @@ export interface SkillGroup {
   tags: string[];
 }
 
+export type BeyondIcon = "handball" | "hospitality" | "music";
+
 export interface BeyondCard {
-  emoji: string;
+  icon: BeyondIcon;
   title: Bilingual;
   text: Bilingual;
 }
@@ -81,35 +85,35 @@ export const now = {
   lead: { es: "Esto es lo que tengo entre manos estos días:", en: "Here's what I'm working on these days:" },
   items: [
     {
-      emoji: "🏠",
+      icon: "home",
       text: {
         es: "Construyendo Housely en mi tiempo libre: una PWA que ya uso a diario en mi propio piso, de idea a producción.",
         en: "Building Housely in my free time: a PWA I already use daily in my own flat, from idea to production.",
       },
     },
     {
-      emoji: "🚀",
+      icon: "rocket",
       text: {
         es: "Modernizando infraestructura: migrando decenas de servicios a una nube basada en Docker y Kubernetes.",
         en: "Modernizing infrastructure: migrating dozens of services to a Docker and Kubernetes powered cloud.",
       },
     },
     {
-      emoji: "🔐",
+      icon: "lock",
       text: {
         es: "Aplicando ciberseguridad en cada capa de lo que construyo, para proteger datos y usuarios reales.",
         en: "Applying cybersecurity at every layer of what I build, to protect real data and real users.",
       },
     },
     {
-      emoji: "🧠",
+      icon: "brain",
       text: {
         es: "Llevando la IA generativa a mi día a día de desarrollo, con Claude Code como copiloto para programar más rápido y mejor.",
         en: "Bringing generative AI into my daily development flow, with Claude Code as a copilot to code faster and better.",
       },
     },
     {
-      emoji: "☕",
+      icon: "coffee",
       text: {
         es: "Construyendo backend sólido con Java y Spring, sin perder de vista Python para proyectos de inteligencia artificial.",
         en: "Building solid backend systems with Java and Spring, while keeping an eye on Python for AI projects.",
@@ -313,7 +317,7 @@ export const beyond = {
   title: nav.beyond,
   cards: [
     {
-      emoji: "🤾",
+      icon: "handball",
       title: { es: "Balonmano federado", en: "Competitive handball" },
       text: {
         es: "Jugué federado a buen nivel desde alevín (11 años) hasta los 18, disputando torneos nacionales: siete años de disciplina y trabajo en equipo.",
@@ -321,7 +325,7 @@ export const beyond = {
       },
     },
     {
-      emoji: "🍽️",
+      icon: "hospitality",
       title: { es: "Hostelería", en: "Hospitality" },
       text: {
         es: "Trabajé en un catering hasta llegar a maître, liderando equipos y tomando decisiones bajo presión, antes de dedicarme por completo a la ingeniería de software.",
@@ -329,7 +333,7 @@ export const beyond = {
       },
     },
     {
-      emoji: "🎺",
+      icon: "music",
       title: { es: "Música", en: "Music" },
       text: {
         es: "Toqué la trompeta durante 8 años en una agrupación musical, donde en solo un año pasé de trompeta tercera a trompeta primera.",
