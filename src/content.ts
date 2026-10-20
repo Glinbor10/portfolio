@@ -26,6 +26,7 @@ export interface Project {
   action: Bilingual;
   result: Bilingual;
   link: string;
+  liveLink?: string;
   featured: boolean;
 }
 
@@ -72,13 +73,20 @@ export const about = {
   },
   stat1: { es: "meses de becario a ingeniero", en: "months from intern to engineer" },
   stat2: { es: "nota del TFG", en: "final project grade" },
-  stat3: { es: "proyectos personales publicados", en: "personal projects published" },
+  stat3: { es: "proyectos propios publicados", en: "personal projects published" },
 };
 
 export const now = {
   title: { es: "Ahora mismo", en: "Right now" },
   lead: { es: "Esto es lo que tengo entre manos estos días:", en: "Here's what I'm working on these days:" },
   items: [
+    {
+      emoji: "🏠",
+      text: {
+        es: "Construyendo Housely en mi tiempo libre: una PWA que ya uso a diario en mi propio piso, de idea a producción.",
+        en: "Building Housely in my free time: a PWA I already use daily in my own flat, from idea to production.",
+      },
+    },
     {
       emoji: "🚀",
       text: {
@@ -191,6 +199,26 @@ export const projects = {
     en: "Different stacks, same interest: building things that actually work.",
   },
   items: [
+    {
+      name: "Housely",
+      date: { es: "oct. 2026 – actualidad · en producción", en: "Oct 2026 – present · in production" },
+      tech: ["React", "TypeScript", "Firebase", "PWA", "Vitest", "Playwright"],
+      problem: {
+        es: "En un piso compartido, las tareas de limpieza se reparten a ojo y siempre acaban cayendo en las mismas personas.",
+        en: "In a shared flat, chores get split by eyeballing it and always end up falling on the same people.",
+      },
+      action: {
+        es: "Construí una PWA instalable y offline-first que rota las zonas de limpieza de forma justa entre todo el piso, con backend serverless en Firebase, tests end-to-end con Playwright y pipeline de CI/CD propio.",
+        en: "I built an installable, offline-first PWA that fairly rotates cleaning zones across the whole flat, with a serverless Firebase backend, Playwright end-to-end tests and its own CI/CD pipeline.",
+      },
+      result: {
+        es: "En uso real en mi propio piso desde el primer día, con despliegue continuo a producción.",
+        en: "In real use in my own flat from day one, with continuous deployment to production.",
+      },
+      link: "https://github.com/Glinbor10/housely",
+      liveLink: "https://housely-prod.web.app",
+      featured: true,
+    },
     {
       name: "SectorMindAI",
       date: { es: "nov. 2025 – jun. 2026 · TFG, nota 9,4", en: "Nov 2025 – Jun 2026 · Final project, grade 9.4" },
@@ -318,8 +346,8 @@ export const beyond = {
 export const contact = {
   title: { es: "Hablemos", en: "Let's talk" },
   lead: {
-    es: "¿Buscas a alguien para tu equipo? Estoy abierto a nuevas oportunidades.",
-    en: "Looking for someone for your team? I'm open to new opportunities.",
+    es: "Siempre abierto a nuevas conversaciones, retos interesantes y colaboraciones.",
+    en: "Always open to new conversations, interesting challenges and collaborations.",
   },
 };
 
